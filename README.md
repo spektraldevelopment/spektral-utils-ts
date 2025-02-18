@@ -1,10 +1,10 @@
 # spektral-utils-ts
 A TypeScript utility library
 
-##Getting started
+## Getting started
 `npm install`
 
-##Script commands:
+## Script commands:
 
 `npm start` - Runs build and test concurrently and watches for changes
 
