@@ -55,7 +55,7 @@ export const REG_EX_PATTERNS = {
     ROUND_BRACKETS: /\(([^)]+)\)/gm,
     CURLY_BRACKETS: /\{([^}]+)\}/gm,
     HTML: /(<([^>]+)>)/gi,
-    SPECIAL_CHARS: /[@#<>=`%'";:&~^!*+?^${}()|\/[\]\\_]/g,
+    SPECIAL_CHARS: /[,@#<>=`%'";:&~^!*+?^${}()|\/[\]\\_]/g,
     NUMBER: /\d+/,
     ALPHA_ONLY: /[^a-zA-Z]/g,
     UPPERCASE: /[A-Z]/,
