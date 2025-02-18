@@ -8,7 +8,7 @@ const config: Config = {
   },
   watchPathIgnorePatterns: ['/node_modules/', '/dist/'],
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+  collectCoverageFrom: ['src/**/**/*.{ts,tsx}'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   verbose: true,
 };
