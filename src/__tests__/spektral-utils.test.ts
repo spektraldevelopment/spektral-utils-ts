@@ -32,5 +32,10 @@ describe('SpektralUtils', () => {
         expect(capitalize).toBeDefined();
         expect(alphaOnly).toBeDefined();
     });
+
+    it(`${utilsName}: should have a url module that contains the expected utility functions`, () => {
+        
+        expect(SpektralUtils.url).toBeDefined();
+    });
 });
 
