@@ -14,30 +14,20 @@ interface URLObject {
 
 /**
  * @function getURL
- * @description Returns an enhanced object with the properties of the window.location object
+ * @description Returns an enhanced object with the selected properties of the window.location object
  * @returns {URLObject} An interface with the properties of the window.location object
  * */
 const getURL = (): URLObject => {
-    const { hash, host, hostname, href, origin, pathname, port, protocol, search } = window.location;
+    const { hash, search, ...defaults } = window.location;
 
     const paramsToObject = (entries: IterableIterator<[string, string]>) => {
-        const obj: any = {};
-        for (const [key, value] of entries) {
-            obj[key] = value;
-        }
-        return obj;
+        return Object.fromEntries(entries);
     };
 
     return {
+        ...defaults,
         hash,
         hashParams: hash.substring(1).split("#"),
-        host,
-        hostname,
-        href,
-        origin,
-        pathname,
-        port,
-        protocol,
         search,
         searchParams: paramsToObject(new URLSearchParams(search).entries()),
       };
