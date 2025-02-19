@@ -8,9 +8,11 @@ const config: Config = {
   },
   watchPathIgnorePatterns: ['/node_modules/', '/dist/'],
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/**/*.{ts,tsx}'],
+  collectCoverageFrom: ['**/**/*.{ts,tsx}'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   verbose: true,
+  testEnvironment: "jsdom",
+  setupFilesAfterEnv: ["<rootDir>/test/setup.ts"],
 };
 
 export default config;

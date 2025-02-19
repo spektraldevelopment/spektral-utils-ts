@@ -1,7 +1,13 @@
 // * Initial test for the string module
 
 import sanitizeString from "../modules/sanitizeString";
-import { convertToCamel, convertToKebab, convertToPascal, convertToSnake, slice, capitalize, alphaOnly } from "../index";
+import convertToCamel from "../modules/convertToCamel";
+import convertToKebab from "../modules/convertToKebab";
+import convertToSnake from "../modules/convertToSnake";
+import convertToPascal from "../modules/convertToPascal";
+import slice from "../modules/slice";
+import capitalize from "../modules/capitalize"; 
+import alphaOnly from "../modules/alphaOnly";
 
 describe("String Module", () => {
 
