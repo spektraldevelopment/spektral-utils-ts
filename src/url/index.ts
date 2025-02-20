@@ -1,9 +1,6 @@
-import getURL from './modules/getURL';
-import isURLValid from './modules/isURLValid';
+import getURL from "./modules/getURL";
+import isURLValid from "./modules/isURLValid";
 
-export {
-    getURL,
-    isURLValid
-};
+export { getURL, isURLValid };
 
 export default {};

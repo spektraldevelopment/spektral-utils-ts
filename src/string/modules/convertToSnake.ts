@@ -6,7 +6,7 @@ import sanitizeString from "./sanitizeString";
  * Trims leading/trailing whitespace and replaces spaces with underscores.
  */
 const convertToSnake = (str: string): string => {
-    return sanitizeString(str, true).replace(/-/g, "_");
+  return sanitizeString(str, true).replace(/-/g, "_");
 };
 
 export default convertToSnake;

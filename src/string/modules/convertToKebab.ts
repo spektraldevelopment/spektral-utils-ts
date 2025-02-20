@@ -5,7 +5,7 @@ import sanitizeString from "./sanitizeString";
  * Trims leading/trailing whitespace and replaces spaces with hyphens.
  */
 const convertToKebab = (str: string): string => {
-    return sanitizeString(str, true);
-}
+  return sanitizeString(str, true);
+};
 
 export default convertToKebab;
