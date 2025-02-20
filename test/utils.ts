@@ -97,6 +97,17 @@ const MOCK_USER_AGENTS: UserAgentMapping = {
   },
 };
 
+const setProperty = <T, K extends keyof any>(
+  obj: T,
+  prop: K,
+  params: any,
+): void => {
+  Object.defineProperty(obj, prop, {
+    writable: true,
+    value: params,
+  });
+};
+
 const Utils = {
   USER_AGENT,
   INNER_WIDTH,
@@ -107,6 +118,7 @@ const Utils = {
   BREAKPOINTS,
   ORIENTATIONS,
   MOCK_USER_AGENTS,
+  setProperty,
 };
 
 export default Utils;

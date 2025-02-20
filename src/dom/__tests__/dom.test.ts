@@ -127,8 +127,6 @@ describe("Dom Module", () => {
       // * Change the z-index of the new element to 100
       newElement.style.zIndex = "100";
 
-      console.log("newElement.style.zIndex: ", newElement.style.zIndex);
-
       // * Expect getMaxZIndex to return 100
       expect(getMaxZIndex()).toBe(100);
     });

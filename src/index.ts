@@ -3,10 +3,12 @@ import * as url from "./url";
 import * as cookie from "./cookie";
 import * as dom from "./dom";
 import * as object from "./object";
+import * as form from "./form";
 
 const SpektralUtils = {
   cookie,
   dom,
+  form,
   object,
   string,
   url,

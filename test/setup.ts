@@ -2,21 +2,10 @@
  * @fileoverview This file contains the setup for the jest tests.
  * @description This file is used to mock the testing environment for each test
  */
-import { divFixture, formFixture } from "./fixtures";
+import Utils from "./utils";
 
 // Store original window object
 const originalWindow = { ...window };
-
-const setProperty = <T, K extends keyof any>(
-  obj: T,
-  prop: K,
-  params: any,
-): void => {
-  Object.defineProperty(obj, prop, {
-    writable: true,
-    value: params,
-  });
-};
 
 const mockLocation = {
   hash: "#test=hello",
@@ -32,13 +21,16 @@ const mockLocation = {
 
 beforeEach(() => {
   // Set window location
-  setProperty(window, "location", mockLocation);
+  Utils.setProperty(window, "location", mockLocation);
 
-  // Add the div fixture to the document body
-  document.body.innerHTML = divFixture;
+  // Add navigator to window
+  Utils.setProperty(window, "navigator", {});
 
-  // Add the form fixture to the document body
-  document.body.innerHTML += formFixture;
+  // Set userAgent
+  Utils.setProperty(navigator, "userAgent", Utils.USER_AGENT);
+
+  // Set window scroll
+  window.HTMLElement.prototype.scrollIntoView = function () {};
 });
 
 afterEach(() => {
