@@ -75,4 +75,14 @@ describe("SpektralUtils", () => {
 
     expect(watch).toBeDefined();
   });
+
+  describe("form", () => {
+    it(`${utilsName}: should have a form module that contains the expected utility functions`, () => {
+      expect(SpektralUtils.form).toBeDefined();
+    });
+
+    const { sanitizeInput } = SpektralUtils.form;
+
+    expect(sanitizeInput).toBeDefined();
+  });
 });
