@@ -2,6 +2,7 @@
  * @fileoverview This file contains the setup for the jest tests.
  * @description This file is used to mock the testing environment for each test
  */
+import { divFixture, formFixture } from "./fixtures";
 
 // Store original window object
 const originalWindow = { ...window };
@@ -32,6 +33,12 @@ const mockLocation = {
 beforeEach(() => {
   // Set window location
   setProperty(window, "location", mockLocation);
+
+  // Add the div fixture to the document body
+  document.body.innerHTML = divFixture;
+
+  // Add the form fixture to the document body
+  document.body.innerHTML += formFixture;
 });
 
 afterEach(() => {
