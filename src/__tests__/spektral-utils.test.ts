@@ -8,7 +8,6 @@ describe("SpektralUtils", () => {
   });
 
   describe("string", () => {
-
     it(`${utilsName}: should have a string module that contains the expected utility functions`, () => {
       expect(SpektralUtils.string).toBeDefined();
 
@@ -39,10 +38,7 @@ describe("SpektralUtils", () => {
       expect(SpektralUtils.url).toBeDefined();
     });
 
-    const {
-      getURL,
-      isURLValid,
-    } = SpektralUtils.url;
+    const { getURL, isURLValid } = SpektralUtils.url;
 
     expect(getURL).toBeDefined();
     expect(isURLValid).toBeDefined();
@@ -53,14 +49,30 @@ describe("SpektralUtils", () => {
       expect(SpektralUtils.cookie).toBeDefined();
     });
 
-    const {
-      getCookie,
-      setCookie,
-      deleteCookie,
-    } = SpektralUtils.cookie;
+    const { getCookie, setCookie, deleteCookie } = SpektralUtils.cookie;
 
     expect(getCookie).toBeDefined();
     expect(setCookie).toBeDefined();
     expect(deleteCookie).toBeDefined();
+  });
+
+  describe("dom", () => {
+    it(`${utilsName}: should have a dom module that contains the expected utility functions`, () => {
+      expect(SpektralUtils.dom).toBeDefined();
+    });
+
+    const { onDocReady } = SpektralUtils.dom;
+
+    expect(onDocReady).toBeDefined();
+  });
+
+  describe("object", () => {
+    it(`${utilsName}: should have an object module that contains the expected utility functions`, () => {
+      expect(SpektralUtils.object).toBeDefined();
+    });
+
+    const { watch } = SpektralUtils.object;
+
+    expect(watch).toBeDefined();
   });
 });

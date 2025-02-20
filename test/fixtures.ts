@@ -14,3 +14,18 @@ export const divFixture: string = `
         <li>Item 3</li>
     </ul>
 </div>`;
+
+export const formFixture: string = `
+<form id="example-form" class="example-form" data-example-form="">
+    <input type="text" id="example-input" class="example-input" data-example-input="" />
+    <input type="checkbox" id="example-checkbox" class="example-checkbox" data-example-checkbox="" />
+    <input type="radio" id="example-radio" class="example-radio" data-example-radio="" />
+    <input type="submit" id="example-submit" class="example-submit" data-example-submit="" />
+    <button id="example-button" class="example-button" data-example-button="">Submit</button>
+    <select id="example-select" class="example-select" data-example-select="">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+    <textarea id="example-textarea" class="example-textarea" data-example-textarea=""></textarea>
+</form>`;

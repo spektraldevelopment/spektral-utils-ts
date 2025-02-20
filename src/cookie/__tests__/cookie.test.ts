@@ -9,7 +9,7 @@ describe("Cookie Module", () => {
       expect(setCookie).toBeDefined();
     });
 
-    // * Test if setCookie sets a cookie 
+    // * Test if setCookie sets a cookie
     it(`should set a cookie`, () => {
       // * Expect the cookie to be set
       expect(setCookie("test", "test")).toBeUndefined();
@@ -25,7 +25,6 @@ describe("Cookie Module", () => {
   });
 
   describe("getCookie", () => {
-
     // * Test if getCookie is defined
     it(`is defined`, () => {
       expect(getCookie).toBeDefined();
