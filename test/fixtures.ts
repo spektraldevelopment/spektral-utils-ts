@@ -14,4 +14,3 @@ export const divFixture: string = `
         <li>Item 3</li>
     </ul>
 </div>`;
-

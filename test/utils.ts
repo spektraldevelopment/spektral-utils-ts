@@ -50,38 +50,48 @@ const MOCK_USER_AGENTS: UserAgentMapping = {
       safari: USER_AGENT,
     },
     ipad: {
-      chrome: "Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)",
-      safari: "Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+      chrome:
+        "Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+      safari:
+        "Mozilla/5.0 (iPad; CPU OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)",
     },
     ipod: {
-      chrome: "Mozilla/5.0 (iPod touch; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)",
-      safari: "Mozilla/5.0 (iPod touch; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+      chrome:
+        "Mozilla/5.0 (iPod touch; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+      safari:
+        "Mozilla/5.0 (iPod touch; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)",
     },
   },
   osx: {
     macbookPro: {
-      chrome: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko)",
-      safari: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+      chrome:
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko)",
+      safari:
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)",
     },
   },
   android: {
     mobile: {
-      chrome: "Mozilla/5.0 (Linux; Android 10; Pixel 3 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36",
+      chrome:
+        "Mozilla/5.0 (Linux; Android 10; Pixel 3 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Mobile Safari/537.36",
     },
     tablet: {
-      chrome: "Mozilla/5.0 (Linux; Android 10; Pixel C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+      chrome:
+        "Mozilla/5.0 (Linux; Android 10; Pixel C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
     },
   },
   windows: {
     desktop: {
-      chrome: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)",
+      chrome:
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)",
       firefox: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0)",
       edge: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)",
     },
   },
   linux: {
     desktop: {
-      chrome: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)",
+      chrome:
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)",
       firefox: "Mozilla/5.0 (X11; Linux x86_64; rv:78.0)",
     },
   },
@@ -97,6 +107,6 @@ const Utils = {
   BREAKPOINTS,
   ORIENTATIONS,
   MOCK_USER_AGENTS,
-}
+};
 
 export default Utils;

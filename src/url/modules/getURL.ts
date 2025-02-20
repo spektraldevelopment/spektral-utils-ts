@@ -1,15 +1,15 @@
 interface URLObject {
-    hash: string;
-    hashParams: string[];
-    host: string;
-    hostname: string;
-    href: string;
-    origin: string;
-    pathname: string;
-    port: string;
-    protocol: string;
-    search: string;
-    searchParams: {};
+  hash: string;
+  hashParams: string[];
+  host: string;
+  hostname: string;
+  href: string;
+  origin: string;
+  pathname: string;
+  port: string;
+  protocol: string;
+  search: string;
+  searchParams: {};
 }
 
 /**
@@ -18,19 +18,19 @@ interface URLObject {
  * @returns {URLObject} An interface with the properties of the window.location object
  * */
 const getURL = (): URLObject => {
-    const { hash, search, ...defaults } = window.location;
+  const { hash, search, ...defaults } = window.location;
 
-    const paramsToObject = (entries: IterableIterator<[string, string]>) => {
-        return Object.fromEntries(entries);
-    };
+  const paramsToObject = (entries: IterableIterator<[string, string]>) => {
+    return Object.fromEntries(entries);
+  };
 
-    return {
-        ...defaults,
-        hash,
-        hashParams: hash.substring(1).split("#"),
-        search,
-        searchParams: paramsToObject(new URLSearchParams(search).entries()),
-      };
+  return {
+    ...defaults,
+    hash,
+    hashParams: hash.substring(1).split("#"),
+    search,
+    searchParams: paramsToObject(new URLSearchParams(search).entries()),
+  };
 };
 
 export default getURL;
