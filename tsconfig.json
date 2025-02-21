@@ -109,10 +109,7 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "src/*",
-    "__tests__",
-    "src/__tests__/spektral-utils.test.ts",
-    "src/string/string.test.ts"
+    "src/*"
   ],
   "exclude": ["node_modules", "dist", "__tests__/*"]
 }
