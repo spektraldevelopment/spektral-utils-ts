@@ -10,7 +10,9 @@
     "start:format": "npx prettier --write .",
     "start": "concurrently npm:start:*",
     "prepare": "husky install",
-    "changelog": "npx standard-version"
+    "changelog": "npx standard-version",
+    "test": "jest",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

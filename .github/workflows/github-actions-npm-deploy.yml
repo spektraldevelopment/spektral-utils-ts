@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm run start:test
+        run: npm run test
 
   build:
     needs: test
@@ -46,7 +46,7 @@ jobs:
         run: npm ci
 
       - name: Build package
-        run: npm run start:build
+        run: npm run build
 
   publish:
     needs: build
@@ -66,7 +66,7 @@ jobs:
         run: npm ci
 
       - name: Build package
-        run: npm run start:build
+        run: npm run build
 
       - name: Publish to npm
         run: npm publish --access public
