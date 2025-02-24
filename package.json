@@ -13,7 +13,7 @@
     "changelog": "npx standard-version",
     "test": "jest",
     "build": "tsc",
-    "postbuild": "cpx dist/**/* ./ && shx rm -r dist"
+    "postbuild": "cpx 'dist/**/*' app && shx rm -r 'dist'"
   },
   "files": [
     "dist/**/*"
