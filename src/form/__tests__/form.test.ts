@@ -35,7 +35,6 @@ describe("Form Module", () => {
   });
 
   describe("focusInput", () => {
-
     // * Set the document body to the form fixture
     document.body.innerHTML = formFixture;
 
@@ -50,7 +49,9 @@ describe("Form Module", () => {
     it("should focus the input", () => {
       focusInput(exampleInput);
 
-      expect(exampleInput.classList.contains("utils-input__ios--focus")).toBe(true);
+      expect(exampleInput.classList.contains("utils-input__ios--focus")).toBe(
+        true,
+      );
     });
 
     it("should focus the input with a custom class", () => {
