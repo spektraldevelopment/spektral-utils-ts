@@ -12,7 +12,7 @@ export const object = objectUtils;
 export const string = stringUtils;
 export const url = urlUtils;
 
-const SpektralUtils = {
+export const SpektralUtils = {
   cookie,
   dom,
   form,
@@ -23,5 +23,3 @@ const SpektralUtils = {
 
 // Export namespace as a string for debugging
 export const utilsNamespace = "SpektralUtils";
-
-export default SpektralUtils;
