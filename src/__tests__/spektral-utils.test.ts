@@ -1,4 +1,4 @@
-import SpektralUtils from "..";
+import SpektralUtils from "../../index";
 
 describe("SpektralUtils", () => {
   const utilsName = "SpektralUtils";

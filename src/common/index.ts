@@ -1,3 +1,6 @@
+// Export namespace as a string for debugging
+export const utilsNamespace: string = "SpektralUtils";
+
 // * Commonly used key codes for keyboard events
 export enum KEY_CODES {
   BACKSPACE = 8,
