@@ -12,7 +12,7 @@ export const object = objectUtils;
 export const string = stringUtils;
 export const url = urlUtils;
 
-export const SpektralUtils = {
+export default {
   cookie,
   dom,
   form,

@@ -2,6 +2,9 @@
 
 A TypeScript utility library
 
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
 ## Getting started
 
 `npm install`
@@ -10,6 +13,6 @@ A TypeScript utility library
 
 `npm start` - Runs build and test concurrently and watches for changes
 
-`npm start:build` - Builds the library
+`npm start:build` - Builds the library while watching for changes
 
-`npm start:test` - Tests the library
+`npm start:test` - Tests the library while watching for changes
