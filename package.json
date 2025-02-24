@@ -1,9 +1,12 @@
 {
   "name": "spektral-utils-ts",
-  "version": "1.0.0-beta.13",
+  "version": "1.0.0-beta.14",
   "description": "A TypeScript utility library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "scripts": {
     "start:build": "tsc --watch",
     "start:test": "jest --watchAll",
