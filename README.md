@@ -3,7 +3,7 @@
 A TypeScript utility library
 
 > [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
+> This library is in beta, and is not production ready, use at own risk
 
 ## Getting started
 
