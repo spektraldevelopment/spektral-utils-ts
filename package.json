@@ -1,6 +1,6 @@
 {
   "name": "spektral-utils-ts",
-  "version": "1.0.0-beta.10",
+  "version": "1.0.0-beta.11",
   "description": "A TypeScript utility library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,11 +12,10 @@
     "prepare": "husky install",
     "changelog": "npx standard-version",
     "test": "jest",
-    "build": "tsc",
-    "postbuild": "cpx 'dist/**/*' app && shx rm -r 'dist'"
+    "build": "tsc"
   },
   "files": [
-    "dist/**/*"
+    "dist/"
   ],
   "repository": {
     "type": "git",
@@ -33,13 +32,11 @@
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.14",
     "concurrently": "^9.1.2",
-    "cpx": "^1.5.0",
     "glob": "^9.3.5",
     "husky": "^8.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "nodemon": "^3.1.9",
-    "shx": "^0.3.4",
     "standard-version": "^9.5.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
