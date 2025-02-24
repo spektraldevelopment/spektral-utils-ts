@@ -1,12 +1,22 @@
 {
   "name": "spektral-utils-ts",
-  "version": "1.0.0-beta.17",
+  "version": "1.0.0-beta.18",
   "description": "A TypeScript utility library",
-  "main": "index.ts",
-  "types": "index.d.ts",
+  "main": "./src/index.js",
   "exports": {
-    ".": "./dist/index.js"
+    "./dist": "./dist/index.js",
+    "./dist/cookie": "./dist/cookie/index.js",
+    "./dist/dom": "./dist/dom/index.js",
+    "./dist/form": "./dist/form/index.js",
+    "./dist/object": "./dist/object/index.js",
+    "./dist/string": "./dist/string/index.js",
+    "./dist/url": "./dist/url/index.js"
   },
+  "typesVersions": {
+  "*": {
+    "spektral-utils": ["dist/index.d.ts"]
+  }
+},
   "scripts": {
     "start:build": "tsc --watch",
     "start:test": "jest --watchAll",
@@ -18,11 +28,7 @@
     "build": "tsc"
   },
   "files": [
-    "dist/",
-    "dist/**/*.d.ts",
-    "dist/**/*.js",
-    "dist/**/*.js.map",
-    "dist/**/*.d.ts.map"
+    "dist/"
   ],
   "repository": {
     "type": "git",

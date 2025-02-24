@@ -14,4 +14,4 @@ const SpektralUtils = {
   url,
 };
 
-export default SpektralUtils;
+export { cookie, dom, form, object, string, url, SpektralUtils as default };
