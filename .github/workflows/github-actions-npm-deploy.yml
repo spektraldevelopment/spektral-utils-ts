@@ -71,7 +71,7 @@ jobs:
       - name: Run post build
         run: npm run postbuild
 
-      - name: CD to dist folder
+      - name: Change directory to dist folder
         run: cd dist
 
       - name: Run pack
