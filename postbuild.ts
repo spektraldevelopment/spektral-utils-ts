@@ -41,7 +41,7 @@ try {
         execSync(`npm pkg set keywords[${index}]="${keyword}"`);
     });
 
-    // Ste type to module
+    // Set type to module
     execSync(`npm pkg set type=module`);
 
 } catch (error) {
