@@ -68,6 +68,12 @@ jobs:
       - name: Build package
         run: npm run build
 
+      - name: Run post build
+        run: npm run postbuild
+
+      - name: CD to dist folder
+        run: cd dist
+
       - name: Publish to npm
         run: npm publish --access public
         env:
