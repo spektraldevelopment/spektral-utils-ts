@@ -11,6 +11,7 @@ const filePath: string = path.join(__dirname, "package.json");
 // Get path to dist folder
 const distPath: string = path.join(__dirname, "dist");
 
+// Read the root package.json file and create a new package.json file in the dist folder
 try {
     const fileContent: string = fs.readFileSync(filePath, "utf-8");
 
@@ -41,9 +42,20 @@ try {
         execSync(`npm pkg set keywords[${index}]="${keyword}"`);
     });
 
-    // Set type to module
-    execSync(`npm pkg set type=module`);
-
 } catch (error) {
     console.error("Error reading JSON file:", error);
+}
+
+// Read the README.md file and copy it to the dist folder
+try {
+    const readmePath: string = path.join(__dirname, "README.md");
+
+    const readmeContent: string = fs.readFileSync(readmePath, "utf-8");
+
+    const distReadmePath: string = path.join(distPath, "README.md");
+
+    fs.writeFileSync(distReadmePath, readmeContent);
+
+} catch (error) {
+    console.error("Error reading README.md file:", error);
 }
