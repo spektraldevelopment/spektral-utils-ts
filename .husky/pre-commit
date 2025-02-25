@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm start:test # Ensure tests pass before committing
+npm test # Ensure tests pass before committing

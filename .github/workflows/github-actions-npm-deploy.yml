@@ -71,13 +71,12 @@ jobs:
       - name: Run post build
         run: npm run postbuild
 
-      - name: Change directory to dist folder
-        run: cd dist
-
       - name: Run pack
         run: npm pack
+        working-directory: ./dist
 
       - name: Publish to npm
         run: npm publish --access public
+        working-directory: ./dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
