@@ -1,8 +1,10 @@
 {
   "name": "spektral-utils-ts",
-  "version": "1.0.0-beta.18",
+  "version": "1.0.0-beta.19",
   "description": "A TypeScript utility library",
   "main": "./src/index.js",
+  "type": "module",
+  "author": "Spektral Development",
   "exports": {
     "./dist": "./dist/index.js",
     "./dist/cookie": "./dist/cookie/index.js",
@@ -13,10 +15,12 @@
     "./dist/url": "./dist/url/index.js"
   },
   "typesVersions": {
-  "*": {
-    "spektral-utils": ["dist/index.d.ts"]
-  }
-},
+    "*": {
+      "spektral-utils": [
+        "dist/index.d.ts"
+      ]
+    }
+  },
   "scripts": {
     "start:build": "tsc --watch",
     "start:test": "jest --watchAll",
@@ -25,7 +29,8 @@
     "prepare": "husky install",
     "changelog": "npx standard-version",
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "postbuild": "node postbuild.ts"
   },
   "files": [
     "dist/"
@@ -34,8 +39,7 @@
     "type": "git",
     "url": "git+https://github.com/spektraldevelopment/spektral-utils-ts.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["typescript", "utility", "library"],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/spektraldevelopment/spektral-utils-ts/issues"
